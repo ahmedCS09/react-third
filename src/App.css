@@ -1,9 +1,197 @@
 @import "tailwindcss";
 
+/* in your global CSS */
+html {
+  scroll-behavior: auto;
+}
+
 body, html
 {
   margin: 0;
   border: 0;
   padding: 0;
+  background-color: whitesmoke;
   overflow-x: hidden;
+}
+
+.heading[theme-change="dark"], .para[theme-change="dark"], .why-join[theme-change="dark"]
+{
+  color: white;
+}
+
+.landing[theme-change='dark']
+{
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.parentMost[theme-change='dark']
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: whitesmoke
+}
+
+.parentMost1[theme-change='dark']
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: whitesmoke
+}
+
+.parent[theme-change='dark']
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: whitesmoke;
+}
+
+.text[theme-change='dark']
+{
+  color: whitesmoke;
+}
+
+.parentM[theme-change='dark']
+{
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.heading-karve[theme-change='dark']
+{
+  color: white;
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.carousel-item img
+{
+  object-fit: cover;
+}
+
+.dropdown-btn
+{
+  background-color: rgba(0, 0, 0, 0.45);
+  border: 0;
+}
+
+.dropdown-btn:focus, .dropdown-btn:hover
+{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dropdown-item:hover
+{
+  background-color: transparent;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.labels label{
+  cursor: pointer;
+}
+
+button
+{
+  transition: all 0.2s ease-in-out;
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 640px)
+{
+  .logoDiv h1{
+display: none;
+  }
+
+  .logoDiv
+  {
+    margin-left: 20px;
+  }
+
+  .theme-link
+  {
+    transform: scale(0.8);
+    position: unset;
+  }
+}
+
+@media(max-width: 201px)
+{
+
+  .logo-footer span
+  {
+    display: none;
+  }
+
+  .text-footer, svg
+  {
+    transform:scale(0.8);
+    padding-left: -5%;
+  }
+  
+}
+
+@media(max-width: 400px)
+{
+  .card1, .card2, .card3, .card4, .card5, .card6, .card_1, .card_2{
+width: 90%;
+  }
+
+  .inner-material
+  {
+    font-size: small;
+  }
+  
+}
+
+@media(max-width: 366px)
+{
+  .menu{
+   margin-top: 35px;
+  }
+
+  .title-font
+  {
+    display: none;
+  }
+  
+}
+
+@media(max-width: 754px)
+{
+  .theme-link{
+   margin-bottom: 7px;
+  }
+
+  .imageDiv{
+    margin-left: -20%;
+  }
+  
+}
+
+@media(max-width: 276px)
+{
+  .imageChild
+  {
+    width: 8rem;
+    right: -75px;
+  }
+
+  .card_2, .theme-link
+  {
+    transform: scale(0.8);
+  }
+  
+}
+
+@media(max-width: 1164px)
+{
+
+  .card_1
+  {
+    width: 75%;
+  }
+  
 }
